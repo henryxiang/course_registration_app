@@ -1,6 +1,6 @@
 # Course Registration Application
 
-This is a Python project built on the following tech stack
+This is a Python project built on the following tech stacks:
 
 - Flask
 - Flask-Restful
