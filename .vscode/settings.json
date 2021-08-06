@@ -1,0 +1,4 @@
+{
+  "python.languageServer": "Pylance",
+  "editor.tabSize": 4
+}
