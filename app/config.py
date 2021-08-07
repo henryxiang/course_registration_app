@@ -18,4 +18,3 @@ Base = declarative_base()
 
 app = Flask('Course Registration App')
 api = Api(app)
-
