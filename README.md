@@ -14,5 +14,18 @@ This is a Python project built on the following tech stacks:
 source init.sh
 ```
 
-The above command is also used to re-initialize the development environment.
+_The above command is also used to re-initialize the development environment._
 
+## Starting the application in development mode
+
+```bash
+source init.sh
+python app/main.py
+```
+
+## Run the application in production mode with a WSGI server
+
+```bash
+source init.sh
+gunicorn --chdir=app --workers=4 main:app
+```
