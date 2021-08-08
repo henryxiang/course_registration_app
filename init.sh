@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PROJECT_DIR=$(cd $(dirname $0); pwd)
+PROJECT_DIR=$(dirname $(realpath $0))
 
 cd $PROJECT_DIR
 echo "PROJECT_DIR=$(pwd)"
@@ -14,10 +14,8 @@ fi
 
 source venv/bin/activate
 
-if [ "$PYTHONPATH" = "" ]; then
-    echo "setting PYTHONPATH"
-    export PYTHONPATH=$(pwd)/app;
-fi
+echo "setting PYTHONPATH"
+export PYTHONPATH=$(pwd)/app;
 
 echo "python=$(which python)"
 echo "PYTHONPATH=${PYTHONPATH}"
