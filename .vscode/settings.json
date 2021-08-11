@@ -1,4 +1,7 @@
 {
   "python.languageServer": "Pylance",
-  "editor.tabSize": 4
+  "editor.tabSize": 4,
+  "files.watcherExclude": {
+    "**/target": true
+  }
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PROJECT_DIR=$(dirname $(realpath $0))
+PROJECT_DIR=$(cd $(dirname $0); pwd)
 
 cd $PROJECT_DIR
 echo "PROJECT_DIR=$(pwd)"
